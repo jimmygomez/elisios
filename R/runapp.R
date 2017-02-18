@@ -6,9 +6,9 @@
 #' @export
 
 elisios <- function() {
-    appDir <- system.file("elisios", package = "sapiens")
+    appDir <- system.file("elisios", package = "elisios")
     if (appDir == "") {
-        stop("Could not find example directory. Try re-installing `sapiens`.",
+        stop("Could not find example directory. Try re-installing `elisios`.",
             call. = FALSE)
     }
 
