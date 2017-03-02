@@ -2,7 +2,6 @@
 
 library(shiny)
 library(shinydashboard)
-library(sapiens)
 library(dplyr)
 library(plotly)
 library(tibble)
@@ -32,8 +31,7 @@ shinyUI(dashboardPage(skin = "green",
         menuItem("Soil", tabName = "soil", icon = icon("cog")),
         menuItem("Weather", tabName = "clima", icon = icon("cloud")),
         menuItem("Graphics", tabName = "graph", icon = icon("edit")),
-        menuItem("Irrigation", tabName = "riego", icon = icon("tint")),
-        menuItem("About", tabName = "info", icon = icon("book"))
+        menuItem("Irrigation", tabName = "riego", icon = icon("tint"))
       )
 
 
@@ -60,7 +58,7 @@ shinyUI(dashboardPage(skin = "green",
 
                 box(
                   title = "Presentacion",
-                  width = 6,
+                  width = 4,
                   status = "primary",
                   solidHeader = T,
 
@@ -73,7 +71,7 @@ shinyUI(dashboardPage(skin = "green",
 
                 box(
                   title = "Charateristics",
-                  width = 6,
+                  width = 4,
                   status = "danger",
                   solidHeader = T,
 
@@ -92,7 +90,7 @@ shinyUI(dashboardPage(skin = "green",
 
                 box(
                   title = "Contributors",
-                  width = 6,
+                  width = 4,
                   status = "success",
                   solidHeader = T,
 
@@ -596,26 +594,7 @@ shinyUI(dashboardPage(skin = "green",
                 DT::dataTableOutput('crop')
 
 
-        ),
-
-
-# informacion -------------------------------------------------------------
-
-
-        tabItem(tabName = "info",
-
-                h4(strong("ELISIOS")),
-
-                p("Elisios, is a free application for calculete que irrigation requirments accodirng the weather conditions, It allows to
-                  connect at remote arduino divices"),
-
-
-
-                br(),
-                br()
-
         )
-
 
 
 

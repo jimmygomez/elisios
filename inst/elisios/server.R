@@ -2,7 +2,6 @@
 
 library(shiny)
 library(shinydashboard)
-library(sapiens)
 library(dplyr)
 library(plotly)
 library(tibble)
@@ -21,10 +20,10 @@ shinyServer(function(input, output) {
 
 metdata <-  eventReactive(input$reload, {
 
-  file <-   sapiens::getData(dir = input$wtdt)
+  file <-   elisios::getData(dir = input$wtdt)
 
   file <- file %>%
-    dplyr::mutate(ETo = sapiens::PenMon(data = file, date = "date",
+    dplyr::mutate(ETo = elisios::PenMon(data = file, date = "date",
       Tmin = "Tmin", Tmax = "Tmax",
       RHmin = "RHmin", RHmax = "RHmax",
       sunshine = "sunshine", wind = "wind",
