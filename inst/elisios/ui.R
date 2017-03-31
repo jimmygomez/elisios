@@ -64,7 +64,9 @@ shinyUI(dashboardPage(skin = "green",
 
                 p( strong(em("ELISIOS")),"is a interactive application for calculte the irrigation requirements based in the metereological data information"),
 
-                  img(src = "agrinka.jpg",  width = "100%")
+                  img(src = "agrinka.jpg",  width = "100%"),
+
+                HTML('<p style="text-align: right;"><span style="font-size:14px;"><span style="font-family:comic sans ms,cursive;">Powered by <span style="font-size:16px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong><span style="color:#ff0000;">Q</span><span style="color:#a52a2a;">u</span><span style="color:#008000;">i</span><span style="color:#008080;">p</span><span style="color:#0000ff;">o</span></strong></span></span></span></span></p>')
 
                 ),
 
@@ -117,6 +119,15 @@ shinyUI(dashboardPage(skin = "green",
                     a("< obacc07@gmail.com >"),
                     br(),
                     code("Centro Internacional de la Papa (CIP)")
+                  ),
+
+
+                  p(
+                    strong("Kevin Arthur Lara Jauregui"),
+                    br(),
+                    a("< kevin.lara@pucp.edu.pe >"),
+                    br(),
+                    code("Pontificia Universidad Católica del Perú")
                   ),
 
 

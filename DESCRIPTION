@@ -4,8 +4,9 @@ Title: Interactive apps for calcutlation the crop water requirements
 Version: 1.0
 Authors@R: c(
            person("Flavio", "Lozano-Isla", email = "flavjack@gmail.com", role = c("aut", "cre")),
-           person("Jimmy R", "Gomez-Carrion", , "pumcarna@gmail.com", "aut"),
+           person("Jimmy R.", "Gomez-Carrion", , "pumcarna@gmail.com", "aut"),
            person("Omar", "Benites-Alfaro", , "obacc07@gmail.com", "aut"),
+           person("Kevin A.", "Lara Jáuregui", , "kevin.lara@pucp.edu.pe", "aut"),
            person(family = "Quipo Inc", role = "cph"))
 BugReports: https://github.com/flavjack/elisios/issues
 Description: Elisios is package develop to calculate the water requiremnts according to the dialy evapotranspiration.
