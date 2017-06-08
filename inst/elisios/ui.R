@@ -113,14 +113,14 @@ shinyUI(dashboardPage(skin = "green",
                     code("Universidad Nacional Agraria la Molina, Lima, Perú")
                   ),
 
-                  p(
-                    strong("Omar Benites Alfaro"),
-                    br(),
-                    a("< obacc07@gmail.com >"),
-                    br(),
-                    code("Centro Internacional de la Papa (CIP)")
-                  ),
-
+                  # p(
+                  #   strong("Omar Benites Alfaro"),
+                  #   br(),
+                  #   a("< obacc07@gmail.com >"),
+                  #   br(),
+                  #   code("Centro Internacional de la Papa (CIP)")
+                  # ),
+                  #
 
                   p(
                     strong("Kevin Arthur Lara Jauregui"),
